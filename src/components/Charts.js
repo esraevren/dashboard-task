@@ -1,33 +1,56 @@
-import React, {useState, Component} from 'react'
+import React, { useState, Component } from "react";
 import Chart from "react-apexcharts";
 
 function Charts() {
-    const [state, setState]= useState( {
+  const [state, setState] = useState({
+    options: {
+      chart: {
+        height: 350,
+        type: "radialBar",
+      },
+      series: [46],
+      colors: ["#7e22ce"],
 
-        options: {
-            chart: {
-                height: 350,
-                type: 'radialBar',
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            margin: 15,
+            size: "70%",
+          },
+
+          dataLabels: {
+            showOn: "always",
+            name: {
+              offsetY: -10,
+              show: true,
+              color: "#7e22ce",
+              fontSize: "13px",
             },
-            series: [46],
-            
-            dataLabels: {
-                value: {
-                    offsetY:-10,
-                    color: "#111",
-                    fontSize: "30px",
-                    show: true
-                  }
+            value: {
+              offsetY: -10,
+              color: "#111",
+              fontSize: "15px",
+              show: true,
             },
-            labels: [''],
-        }
-      })
-   
+          },
+        },
+      },
+
+      labels: [""],
+    },
+  });
+
   return (
     <div>
-        <Chart options={state.options} series={state.options.series} type="radialBar" height={150} width={150} dataLabels={state.options.dataLabels} />
+      <Chart
+        options={state.options}
+        series={state.options.series}
+        type="radialBar"
+        height={150}
+        width={150}
+      />
     </div>
-  )
+  );
 }
 
-export default Charts
+export default Charts;
