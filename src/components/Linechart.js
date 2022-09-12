@@ -8,8 +8,14 @@ class Linechart extends Component {
     this.state = {
       options: {
         chart: {
-          id: "basic-bar"
+          id: "basic-bar",
+          toolbar: false
         },
+        
+        stroke: {
+          curve: 'smooth'
+        },
+        colors:["#4c1d95"],
         xaxis: {
           categories: [1, 5, 10, 15, 20, 25]
         }
@@ -18,7 +24,11 @@ class Linechart extends Component {
         {
           name: "series-1",
           data: [142, 180, 45, 50, 49, 60, ]
-        }
+        },
+        {
+          name: "series-1",
+          data: [14, 180, 45, 50, 49, 60, ]
+        },
       ]
     };
   }
@@ -32,7 +42,7 @@ class Linechart extends Component {
               options={this.state.options}
               series={this.state.series}
               type="line"
-              width="1200"
+              width="850"
               height="277"
             />
           </div>

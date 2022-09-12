@@ -4,7 +4,7 @@ import logo from "../assets/images/frame17.jpg";
 import plus from "../assets/images/Frame 2.png";
 import calendar from "../assets/images/calendar.png";
 import Linechart from "./Linechart";
-import Perpetual from "./Perpetual";
+import Donutchart from "./Donutchart";
 
 function Header() {
   return (
@@ -169,8 +169,8 @@ function Header() {
       <div className="flex flex-row ml-4">
         <div className="flex basis-1/2">
           <div className="text-slate-800 font-bold">Perpetual</div>
-          <div className='ml-2 mt-1'>
-            <span >
+          <div className="ml-2 mt-1">
+            <span>
               <svg
                 width="18"
                 height="18"
@@ -198,13 +198,12 @@ function Header() {
               </svg>
             </span>
           </div>
-        
-          
         </div>
-        
+
         <div className="flex basis-1/2">
-        <div className="text-slate-800 font-bold">Active Percentage</div>
-        <div className='ml-2 mt-1'><span >
+          <div className="text-slate-800 font-bold">Active Percentage</div>
+          <div className="ml-2 mt-1">
+            <span>
               <svg
                 width="18"
                 height="18"
@@ -230,14 +229,12 @@ function Header() {
                 />
                 <circle cx="9" cy="12" r="0.75" fill="#D0D1D2" />
               </svg>
-            </span></div>
+            </span>
+          </div>
         </div>
       </div>
 
-
-      <div className='ml-4 mt-4'>
-        <Perpetual></Perpetual>
-      </div>
+      <div className="ml-4 mt-4"><Donutchart></Donutchart></div>
     </div>
   );
 }
