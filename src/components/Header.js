@@ -5,11 +5,13 @@ import plus from "../assets/images/Frame 2.png";
 import calendar from "../assets/images/calendar.png";
 import Linechart from "./Linechart";
 import Donutchart from "./Donutchart";
+import Barchart from "./Barchart";
+import { Bar } from "react-chartjs-2";
 
 function Header() {
   return (
-    <div className="h-screen flex-1 flex flex-col">
-      <header className="h-18 flex  items-center border-gray-200 ">
+    <div className="h-screen flex-1 flex flex-col ">
+      <header className="h-18 flex  items-center border border-b-zinc-300">
         <div className="flex items-center justify-center  p-4 text-slate-800 font-bold">
           Dashboard
         </div>
@@ -24,7 +26,7 @@ function Header() {
         <Search />
       </header>
 
-      <div className="flex justify-start gap-x-7 mt-9 ml-4 text-sm">
+      <div className="flex justify-start gap-x-7 mt-9 ml-4 text-sm ">
         <div className="text-purple-900 font-bold"> DASHBOARD</div>
         <div>
           <svg
@@ -202,6 +204,7 @@ function Header() {
 
         <div className="flex basis-1/2">
           <div className="text-slate-800 font-bold">Active Percentage</div>
+          
           <div className="ml-2 mt-1">
             <span>
               <svg
@@ -230,11 +233,17 @@ function Header() {
                 <circle cx="9" cy="12" r="0.75" fill="#D0D1D2" />
               </svg>
             </span>
+            
           </div>
+          
         </div>
       </div>
 
-      <div className="ml-4 mt-4"><Donutchart></Donutchart></div>
+      <div className="flex ml-4 mt-4"><Donutchart></Donutchart>
+      <div><Barchart></Barchart></div>
+      
+      </div>
+      
     </div>
   );
 }

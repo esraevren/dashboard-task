@@ -6,8 +6,8 @@ import List from "./List";
 function Aside() {
   return (
     <>
-      <div className="pt-3 flex justify-end space-x-9 mr-3 pb-2">
-        <div className="text-slate-800 font-bold mt-2">Bessie Cooper</div>
+      <div className=" flex justify-end space-x-9 mr-3 pb-2 border border-b-zinc-300 ">
+        <div className="text-slate-800 font-bold mt-4 ">Bessie Cooper</div>
         <img
           src="https://images.pexels.com/photos/3771089/pexels-photo-3771089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="user"
@@ -51,7 +51,7 @@ function Aside() {
         </button>
       </div>
 
-      <div className="bg-violet-100 pt-1 h-full">
+      <div className="bg-violet-100 pt-1 h-full border border-b-slate-800">
         <div className="flex mt-8 ml-[64px] ">
           <div className="text-slate-800 font-bold">Superiority</div>
           <span className="ml-2 mt-[3px]">

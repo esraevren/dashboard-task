@@ -2,8 +2,8 @@ import React from 'react'
 
 function Sidebar() {
     return (
-        <div className='flex h-full '>
-            <div className='w-20 h-full  '>
+        <div className='flex h-full border border-r-zinc-400'>
+            <div className='w-20 h-full '>
                 <a href="#"></a>
 
                 <div className='flex flex-col items-center h-full space-y-2 mt-5'>
