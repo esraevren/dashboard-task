@@ -2,12 +2,13 @@ import React from "react";
 import myImage from "../assets/images/image3.png";
 import Charts from "./Charts";
 import List from "./List";
+import Toggle from "./Toggle";
 
 function Aside() {
   return (
     <>
-      <div className=" flex justify-end space-x-9 mr-3 pb-2 border border-b-zinc-300 ">
-        <div className="text-slate-800 font-bold mt-4 ">Bessie Cooper</div>
+      <div className=" flex justify-end space-x-9 mr-3 pb-2 border border-b-zinc-300 dark:bg-zinc-900 dark:border-none">
+        <div className="text-slate-800 font-bold mt-4 dark:text-white ">Bessie Cooper</div>
         <img
           src="https://images.pexels.com/photos/3771089/pexels-photo-3771089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="user"
@@ -30,30 +31,12 @@ function Aside() {
             />
           </svg>
         </button>
-        <button>
-          <svg
-            width="34"
-            height="34"
-            viewBox="0 0 34 34"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M22.2502 17.4608C21.9949 20.2234 19.6343 22.3105 16.8613 22.2252C14.0882 22.14 11.8602 19.912 11.775 17.139C11.6898 14.3659 13.7768 12.0053 16.5394 11.75C15.3379 13.3754 15.5065 15.6353 16.9357 17.0645C18.365 18.4938 20.6248 18.6623 22.2502 17.4608V17.4608Z"
-              stroke="#11263C"
-              stroke-width="1.16667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
+        <Toggle></Toggle>
       </div>
 
-      <div className="bg-violet-100 pt-1 h-full border border-b-slate-800">
+      <div className="bg-violet-100 pt-1  border border-b-slate-800 dark:bg-black dark:border-none">
         <div className="flex mt-8 ml-[64px] ">
-          <div className="text-slate-800 font-bold">Superiority</div>
+          <div className="text-slate-800 font-bold dark:text-white">Superiority</div>
           <span className="ml-2 mt-[3px]">
             <svg
               width="18"
@@ -135,7 +118,7 @@ function Aside() {
         </div>
 
         <div className="flex mt-10 ml-[64px] ">
-          <div className="text-slate-800 font-bold">My Income</div>
+          <div className="text-slate-800 font-bold dark:text-white">My Income</div>
           <span className="ml-2 mt-[3px]">
             <svg
               width="18"

@@ -12,7 +12,7 @@ function Header() {
   return (
     <div className="h-screen flex-1 flex flex-col ">
       <header className="h-18 flex  items-center border border-b-zinc-300">
-        <div className="flex items-center justify-center  p-4 text-slate-800 font-bold">
+        <div className="flex items-center justify-center  p-4 text-slate-800 font-bold dark:text-white">
           Dashboard
         </div>
 
@@ -52,10 +52,10 @@ function Header() {
         <div>
           <img src={logo}></img>
         </div>
-        <div className="text-slate-800 font-medium text-2xl mt-1">
+        <div className="text-slate-800 font-medium text-2xl mt-1 dark:text-white">
           wubin.design
         </div>
-        <div className="bg-purple-600 mb-5 rounded-full  p-2">
+        <div className="bg-purple-600 mb-5 rounded-full  p-2 dark:bg-neutral-700">
           <button>
             <img src={plus}></img>
           </button>
@@ -204,7 +204,7 @@ function Header() {
 
         <div className="flex basis-1/2">
           <div className="text-slate-800 font-bold">Active Percentage</div>
-          
+
           <div className="ml-2 mt-1">
             <span>
               <svg
@@ -233,17 +233,16 @@ function Header() {
                 <circle cx="9" cy="12" r="0.75" fill="#D0D1D2" />
               </svg>
             </span>
-            
           </div>
-          
         </div>
       </div>
 
-      <div className="flex ml-4 mt-4"><Donutchart></Donutchart>
-      <div><Barchart></Barchart></div>
-      
+      <div className="flex ml-4 mt-4">
+        <Donutchart></Donutchart>
+        <div>
+          <Barchart></Barchart>
+        </div>
       </div>
-      
     </div>
   );
 }

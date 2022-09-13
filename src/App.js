@@ -10,10 +10,10 @@ function App() {
     <div className="w-full min-h-screen  flex flex-row ">
       <Sidebar/>
      
-      <section className='flex-3'><Header/>
+      <section className='  flex-3'><Header/>
       
       </section>
-      <section className='w-96'><Aside/></section>
+      <section className=' w-96'><Aside/></section>
       
     </div>
   );

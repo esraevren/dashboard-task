@@ -42,13 +42,15 @@ function Charts() {
 
   return (
     <div>
-      <Chart
-        options={state.options}
-        series={state.options.series}
-        type="radialBar"
-        height={150}
-        width={150}
-      />
+      <div>
+        <Chart
+          options={state.options}
+          series={state.options.series}
+          type="radialBar"
+          height={150}
+          width={150}
+        />
+      </div>
     </div>
   );
 }
