@@ -4,30 +4,7 @@ import { ThemeContext } from "./themeContext";
 const Toggle = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
   return theme === "dark" ? (
-    <button
-    onClick={()=> setTheme(theme === 'dark' ? 'light' : 'dark') }
-    >
-      <svg
-        width="34"
-        height="34"
-        viewBox="0 0 34 34"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M22.2502 17.4608C21.9949 20.2234 19.6343 22.3105 16.8613 22.2252C14.0882 22.14 11.8602 19.912 11.775 17.139C11.6898 14.3659 13.7768 12.0053 16.5394 11.75C15.3379 13.3754 15.5065 15.6353 16.9357 17.0645C18.365 18.4938 20.6248 18.6623 22.2502 17.4608V17.4608Z"
-          stroke="#11263C"
-          stroke-width="1.16667"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-  ) : (
-    <button  onClick={()=> setTheme(theme === 'dark' ? 'light' : 'dark') }>
-      
+    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
       <svg
         width="14"
         height="14"
@@ -102,10 +79,27 @@ const Toggle = () => {
         />
       </svg>
     </button>
+  ) : (
+    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12.2502 7.46083C11.9949 10.2234 9.63428 12.3105 6.86126 12.2252C4.08825 12.14 1.86018 9.91198 1.77498 7.13896C1.68977 4.36595 3.77684 2.0053 6.53939 1.75C5.33794 3.37543 5.50646 5.63526 6.93571 7.06452C8.36496 8.49377 10.6248 8.66229 12.2502 7.46083V7.46083Z"
+          stroke="#11263C"
+          stroke-width="1.16667"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
   );
 };
 
 export default Toggle;
-
-
-

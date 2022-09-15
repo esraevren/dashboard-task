@@ -1,21 +1,18 @@
- import './App.css';
+import './App.css';
 import Header from './components/Header';
- import './components/Search';
-import Search from './components/Search';
 import Sidebar from './components/Sidebar';
 import Aside from './components/Aside';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className="w-full min-h-screen  flex flex-row ">
+     <div className="flex dark:bg-[#1C1C1E] ">
       <Sidebar/>
      
-      <section className='  flex-3'><Header/>
+      <section className='flex-1 dark:border-r-black'><Header/><Main></Main> </section>
+       <section><Aside/></section>   
       
-      </section>
-      <section className=' w-96'><Aside/></section>
-      
-    </div>
+     </div>
   );
 }
 

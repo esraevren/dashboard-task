@@ -25,11 +25,11 @@ class Linechart extends Component {
       },
       series: [
         {
-          name: "series-1",
+          name: "",
           data: [112, 180, 145, 290, 179, 260,270,220 ]
         },
         {
-          name: "series-2",
+          name: "",
           data: [184, 130, 195, 50, 49, 160,250,265 ]
         },
       ]
@@ -38,7 +38,7 @@ class Linechart extends Component {
 
   render() {
     return (
-      <div >
+      <div className="pl-4 ">
         <div className="row">
           <div className="mixed-chart">
             <Chart
@@ -46,7 +46,7 @@ class Linechart extends Component {
               series={this.state.series}
               type="line"
               width="850"
-              height="277"
+              height="250"
             />
           </div>
         </div>

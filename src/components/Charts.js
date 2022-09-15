@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import Chart from "react-apexcharts";
 
 function Charts() {
@@ -9,13 +9,13 @@ function Charts() {
         type: "radialBar",
       },
       series: [46],
-      colors: ["#7e22ce"],
+      colors: ["#5b21b6"],
 
       plotOptions: {
         radialBar: {
           hollow: {
             margin: 15,
-            size: "70%",
+            size: "50%",
           },
 
           dataLabels: {
@@ -28,8 +28,10 @@ function Charts() {
             },
             value: {
               offsetY: -10,
-              color: "#111",
-              fontSize: "15px",
+              color: "#1e293b",
+              fontSize: "13px",
+              fontFamily: "Poppins",
+              fontWeight: "bold",
               show: true,
             },
           },
@@ -47,8 +49,8 @@ function Charts() {
           options={state.options}
           series={state.options.series}
           type="radialBar"
-          height={150}
-          width={150}
+          height={130}
+          width={70}
         />
       </div>
     </div>
